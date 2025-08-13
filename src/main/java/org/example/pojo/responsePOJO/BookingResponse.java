@@ -1,28 +1,30 @@
 package org.example.pojo.responsePOJO;
 
+import org.example.pojo.requestPOJO.Booking;
+
 import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class BookingResponse
 {
-    private String checkin;
-    private String checkout;
+    private Integer bookingid;
+    private Booking booking;
     private Map<String, Object> additionalProperties = new LinkedHashMap<String, Object>();
 
-    public String getCheckin() {
-        return checkin;
+    public Integer getBookingid() {
+        return bookingid;
     }
 
-    public void setCheckin(String checkin) {
-        this.checkin = checkin;
+    public void setBookingid(Integer bookingid) {
+        this.bookingid = bookingid;
     }
 
-    public String getCheckout() {
-        return checkout;
+    public Booking getBooking() {
+        return booking;
     }
 
-    public void setCheckout(String checkout) {
-        this.checkout = checkout;
+    public void setBooking(Booking booking) {
+        this.booking = booking;
     }
 
     public Map<String, Object> getAdditionalProperties() {
@@ -32,5 +34,4 @@ public class BookingResponse
     public void setAdditionalProperty(String name, Object value) {
         this.additionalProperties.put(name, value);
     }
-
 }
